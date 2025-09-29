@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌈Real Only Trash - Maximum Degenerate Utilitises  🌈</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Glitchy header -->
+        <header class="glitch-header">
+            <h1 class="glitch-text" data-text="Real Only Trash">Real Only Trash</h1>
+            <p class="subtitle">🎪 Welcome to the zone of maximum unstables! 🎪</p>
+        </header>
+
+        <!-- Main content -->
+        <main class="main-content">
+            <!-- Broken calculator -->
+            <div class="widget calculator-widget">
+                <h3>🧮 Super Calculator 3000</h3>
+                <div class="calculator">
+                    <input type="text" id="calc-display" readonly placeholder="???">
+                    <div class="calc-buttons">
+                        <button onclick="addToCalc('1')">1</button>
+                        <button onclick="addToCalc('2')">2</button>
+                        <button onclick="addToCalc('3')">3</button>
+                        <button onclick="addToCalc('+')">+</button>
+                        <button onclick="addToCalc('4')">4</button>
+                        <button onclick="addToCalc('5')">5</button>
+                        <button onclick="addToCalc('6')">6</button>
+                        <button onclick="addToCalc('-')">-</button>
+                        <button onclick="addToCalc('7')">7</button>
+                        <button onclick="addToCalc('8')">8</button>
+                        <button onclick="addToCalc('9')">9</button>
+                        <button onclick="addToCalc('*')">×</button>
+                        <button onclick="addToCalc('0')">0</button>
+                        <button onclick="clearCalc()">C</button>
+                        <button onclick="brokenCalculate()">=</button>
+                        <button onclick="addToCalc('/')">÷</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spinning object -->
+            <div class="widget spinning-widget">
+                <h3>🌪️ Hypnotizer 9000</h3>
+                <div class="spinner" id="spinner">🍕</div>
+                <button onclick="changeSpinner()">Change Object</button>
+                <button onclick="reverseSpinner()">Reverse Time</button>
+            </div>
+
+            <!-- Slider from 0 to banana -->
+            <div class="widget slider-widget">
+                <h3>🍌 Banananess Meter</h3>
+                <input type="range" id="banana-slider" min="0" max="100" value="50">
+                <div class="slider-display" id="slider-display">50% banana</div>
+                <button onclick="randomizeSlider()">Random Banananess</button>
+            </div>
+
+            <!-- Chaos button -->
+            <div class="widget button-widget">
+                <h3>⚡ Chaos Button</h3>
+                <button class="chaos-button" onclick="chaosButton()">DO NOT PRESS!</button>
+                <div id="chaos-result"></div>
+            </div>
+
+            <!-- Fake progress bar -->
+            <div class="widget progress-widget">
+                <h3>📊 Loading Important Data...</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div id="progress-text">0% loaded</div>
+                <button onclick="startFakeProgress()">Start Loading</button>
+            </div>
+
+            <!-- Random facts generator -->
+            <div class="widget facts-widget">
+                <h3>🧠 WILD Facts Generator</h3>
+                <div id="random-fact">Click the button to get a fact!</div>
+                <button onclick="generateFact()">Get Fact</button>
+            </div>
+
+            <!-- Virtual pet -->
+            <div class="widget pet-widget">
+                <h3>🐾 Virtual Pet</h3>
+                <div class="pet" id="pet">🐶</div>
+                <div class="pet-stats">
+                    <div>Happiness: <span id="happiness">???</span></div>
+                    <div>Hunger: <span id="hunger">???</span></div>
+                    <div>Energy: <span id="energy">???</span></div>
+                </div>
+                <div class="pet-buttons">
+                    <button onclick="feedPet()">Feed</button>
+                    <button onclick="playWithPet()">Play</button>
+                    <button onclick="petSleep()">Sleep</button>
+                </div>
+            </div>
+
+            <!-- Fake chat -->
+            <div class="widget chat-widget">
+                <h3>💬 AI Chat</h3>
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message ai-message">AI: Hello! I'm ready to answer any questions!</div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="chat-input" placeholder="Enter your question...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+
+            <!-- Time machine -->
+            <div class="widget time-widget">
+                <h3>⏰ Time Machine</h3>
+                <div class="time-display" id="time-display">Current time: ???</div>
+                <div class="time-buttons">
+                    <button onclick="timeTravel('past')">To Past</button>
+                    <button onclick="timeTravel('future')">To Future</button>
+                    <button onclick="timeTravel('random')">Random Time</button>
+                </div>
+            </div>
+
+            <!-- Mood detector -->
+            <div class="widget mood-widget">
+                <h3>😊 Mood Detector</h3>
+                <div class="mood-display" id="mood-display">Analyzing your mood...</div>
+                <button onclick="detectMood()">Detect Mood</button>
+            </div>
+
+        </main>
+
+        <!-- Floating elements -->
+        <div class="floating-elements">
+            <div class="floating-emoji">🌈</div>
+            <div class="floating-emoji">🎪</div>
+            <div class="floating-emoji">🎭</div>
+            <div class="floating-emoji">🎨</div>
+            <div class="floating-emoji">🎯</div>https://x.com/MadnessGlitch 
+        </div>
+
+        <!-- Notifications -->
+        <div id="notification" class="notification"></div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025Real Only Trash - Making the internet more WILD since 1993! 🎉</p>
+            <p>Warning: this website may cause fits of laughter and/or dizziness</p>
+            <div class="social-links">
+                <a href="https://x.com/useful_utility" target="_blank" class="x-button">
+                    <span class="x-icon">𝕏</span>
+                    <span class="x-text">Follow us on X</span>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
